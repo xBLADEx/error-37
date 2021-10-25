@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Popup from '../components/popup/popup';
+import Skull from '../components/skull/skull';
 import Splatter from '../components/splatter/splatter';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <h1>Welcome to Error 37!</h1>
         <Splatter />
         <Popup />
+        <Skull />
       </main>
     </div>
   );
