@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nosifer', cursive;
+  cursor: url('../public/cursor-knife.png'), auto;
+  background-color: black;
+  color: #dc4955;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -13,4 +21,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+  width: 100%;
+  pointer-events: none;
+}
+
+#canvas {
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.popup {
+  position: absolute;
+  z-index: 10;
+}
+
+.popup.hide {
+  display: none;
 }
